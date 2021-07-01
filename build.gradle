@@ -14,6 +14,11 @@ repositories {
 	maven {
 		url "https://jitpack.io"
 	}
+
+	maven {
+		name "TerraformersMC"
+		url "https://maven.terraformersmc.com/"
+	}
 }
 
 dependencies {
@@ -23,6 +28,8 @@ dependencies {
 	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 
 	modImplementation "com.github.CursedMC:quilt-loading-screen:8826a82"
+
+	modRuntime "com.terraformersmc:modmenu:2.0.2"
 
 	// PSA: Some older mods, compiled on Loom 0.2.1, might have outdated Maven POMs.
 	// You may need to force-disable transitiveness on them.
